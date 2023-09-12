@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+      width:100%;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-image: linear-gradient( #1a304d,rgb(147, 53, 224));
+      background-color:rgb(147, 53, 224) ;
+}
+h1,h2{
+    text-align:center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.container1 {
+  margin:auto;
+  width:60%;
+  border-radius: 4px;
+  padding: 10px;
+}
+div.container2 {
+  margin:auto;
+  width:50%;
+  border-radius: 4px;
+  padding: 10px;
+}
+button {
+  background-color: #04AA6D;
+  padding: 16px 20px;
+  width:20%;
+  cursor: pointer;
+  position: relative;
+  left:450px;
+  bottom:130px;
+}
+
+</style>
+</head>
+<body>
+  <h2 style="background-image: linear-gradient(  #73c4e9,rgb(80, 120, 230));border:1px solid white;"> 
+    <p style="text-align:center; color: #251a4d;">RESULTS</p></h2>
+
+{% if prediction == 1%}
+
+<div class="container1" style=" background-color: #f2f2f2; border: 1px solid #251a4d;  box-shadow: 5px 5px;" >
+
+<h2 style="color: rgb(209, 23, 23); text-align: center;border:2px solid #251a4d;
+background-image: linear-gradient( rgb(245, 224, 80),rgb(245, 152, 48)); ">
+  Chances of having Diabetes is High
+</h2>
+
+<h2 style="background-image: linear-gradient(  #73c4e9,rgb(80, 120, 230));color:#251a4d; border:2px solid #251a4d;">PLEASE CONSULT A DOCTOR.</h2>
+<p style="text-align: center;"><img src="https://i.ibb.co/C2ZtQ2p/doctor.jpg" alt="HTML" width="400" height="250" style="border: 1px solid black;"></p>
+<h2 style="text-align: center; color: #251a4d;">Book The Best Doctor's Appointment By Clicking The Button Twice.</h2>
+<button>
+  <a href="https://www.maxhealthcare.in/doctor/diabetologist" style="color: white;">CONSULT</a>
+</button>
+</div >
+
+{% elif prediction == 0%}
+
+<div class="container2" style=" background-color: white;  box-shadow: 10px 10px;">
+<h2 style="background-image: linear-gradient(  #b7f39f,rgb(76, 231, 55)); border: 2px solid #251a4d;">No Worries!!!<br>You Don't Have Diabetes.</h2>
+<p style="text-align: center;"><img src="https://i.ibb.co/LzWQP4v/nodia.jpg" alt="HTML" class="img" width="300" height="250">
+<br>
+
+</p>
+
+{% endif %}
+</div>
+
+  </body>
+  </html>

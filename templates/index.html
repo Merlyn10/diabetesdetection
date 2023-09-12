@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+body{
+    width:100%;
+
+    align-items: center;
+    background-repeat:no-repeat;
+    background-image: linear-gradient( #1a304d,rgb(132, 49, 201)); 
+    background-color: rgb(132, 49, 201); 
+}
+    input[type=text], select {
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width:70%;
+    box-sizing:content-box;
+    align-self: center;
+    }
+    .registerbtn {
+    background-color:#16d891;
+    color: white;
+    padding: 16px 20px;
+    width:25%;
+    margin: 8px 0;
+    align-self: center;
+    cursor: pointer;
+    }
+    .registerbtn:hover {
+    opacity:1;
+    }
+    input[type=submit]:hover {
+    background-color: #17cce4;
+    }
+    .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #ff9101c5;
+    padding: 10px;
+    }
+    
+div.contain {
+    float:right;
+    display:flow-root;
+    position: relative; 
+    top:2px;
+    right:35px;
+    border-radius: 4px;
+    text-align: center;
+    top:40px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:45%;
+    align-items: center;
+}
+div.container {
+    width:40%;
+    float: left;
+    position: relative; 
+    left:30px;
+    top:50px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+</style>
+</head>
+<body class="body">
+        
+    <h2 style="background-image: linear-gradient(  #73c4e9,rgb(80, 120, 230)); border:1px solid #f3f5f8"> 
+    <p style="text-align:center; color:white;">DIABETES PREDICTION FORM</p></h2>
+  
+<div class="container">
+    <form action="/predict" method="post">
+        <fieldset>
+            <legend style="color:rgb(25, 28, 150) ;">CHECK IF YOU HAVE DIABETES:</legend>
+            <input type="text" name="Glucose Level" placeholder="Glucose Level" required="required" />
+            <br>
+             <input type="text" name="Insulin" placeholder="Insulin" required="required" />
+            <br>
+            <input type="text" name="BMI" placeholder="BMI" required="required" />
+            <br>
+            <input type="text" name="Diabetes PF" placeholder="Diabetes PF" required="required" />
+            <br>
+            <input type="text" name="Age" placeholder="Age" required="required" />
+            <br>
+            <button type="submit" class="registerbtn" style="color: #1a304d;" ><b>PREDICT</b></button>
+        </fieldset>
+    </form>
+</div>
+<div class="contain" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bIhy-Rb2xp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <h2 style="font-family:Arial, Helvetica, sans-serif;"><b><i>Watch the video to know what is Diabetes and its Symptoms</i></b></h2>
+</div>   
+
+</body>
+</html>
+  
